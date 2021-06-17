@@ -1,2 +1,2 @@
 # Java-CodeBase
-practice programs using java language
+practice programming using java language
