@@ -15,7 +15,7 @@ public class Point{
     }
     public double distance(Point otherPt){
         int dx = x - otherPt.getX();
-        int dy = y - otherPt.getX();
+        int dy = y - otherPt.getY();
 
         return Math.sqrt(dx*dx + dy*dy);
         
