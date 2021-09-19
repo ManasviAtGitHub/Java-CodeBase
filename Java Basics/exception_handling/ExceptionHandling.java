@@ -11,26 +11,21 @@
  */
 
 
-class MyException extends Exception{
+class FunnyException extends Exception {
 
-    
-//    MyException(){
+//    FunnyException(){
 //    
 //    }
+    private String message;
+    FunnyException(String m){
     
-//    private String message;
-//    MyException(String m){
-//    
-//        message = m;
-//    }
+        message = m;
+    }
+   public String toString(){
     
-//   public String toString(){
-//    
-//       return message;
-//    
-//   }
+       return message;
     
-    
+   }
 }
 public class ExceptionHandling {
 
@@ -198,22 +193,19 @@ public class ExceptionHandling {
         
     }
     
-    static void ex8(){
-        
+    static void ex8() {
+
         try {
-                
-                throw new MyException();
-//                throw new MyException("Wishful thinking");
-                
-    
-        }catch(MyException e){
-        
+
+//            throw new FunnyException();
+                throw new FunnyException("When will java lecture get over");
+
+        } catch (FunnyException e) {
+
             System.out.println(e);
-        
+
         }
-        
-        
-    
+
     }
     
     
